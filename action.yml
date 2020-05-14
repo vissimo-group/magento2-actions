@@ -1,0 +1,19 @@
+name: 'Magento 2 actions'
+description: 'Test Build Deploy M2 projects'
+author: 'MAD IT (www.madit.fr)'
+inputs: 
+  process:
+    description: 'Possible values: build, static-test, integration-test, unit-test, phpcs-test, deploy-staging, deploy-production, cleanup-staging, cleanup-production'
+    default: 'build'
+  extension:
+    description: 'the third party module to test in app/code.  Vendor or Vendor/MyModule'
+    default: ''
+  standard:
+    description: 'Magento2, PSR2, PSR1, PSR12 etc... see magento-coding-standard'
+    default: 'Magento2'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'arrow-up-circle'
+  color: 'blue'
