@@ -17,7 +17,7 @@ bin/magento setup:install \
   --admin-email="local@local.com" \
   --admin-user="local" \
   --admin-password="local123" \
-  --base-url="http://magento.build/" \
+  --base-url="http://magento.localhost/" \
   --backend-frontname="admin" \
   --db-host="mysql" \
   --db-name="magento" \
